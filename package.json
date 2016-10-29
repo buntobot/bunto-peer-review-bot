@@ -1,7 +1,10 @@
 {
   "name": "peer-review-bot",
   "version": "0.3.0",
-  "author": "Felix Rieseberg <felix@felixrieseberg.com>",
+  "author": {
+    "Suriyaa Kudo <suriyaa@bunto.isc>",
+    "Felix Rieseberg <felix@felixrieseberg.com>"
+  },
   "repository": {
     "url": "https://github.com/felixrieseberg/peer-review-bot"
   },
