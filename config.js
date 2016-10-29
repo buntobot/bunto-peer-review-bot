@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 var pe = process.env,
     config = {};
 
@@ -11,7 +13,7 @@ config.github = pe.github || '',
 config.user = pe.targetUser || 'bunto',
 config.repo = pe.targetRepo || 'bunto',
 config.botUser = pe.botUser || 'buntobot',
-config.botPassword = pe.botPassword || '',
+config.botPassword = pe.botPassword || process.env.PASSWORD,
 config.labelReviewed = pe.labelReviewed || 'peer-reviewed',
 config.labelNeedsReview = pe.labelNeedsReview || 'needs-peer-review',
 config.reviewsNeeded = pe.reviewsNeeded || 3;
