@@ -8,9 +8,9 @@ var pe = process.env,
  */
 // GHE user may need to setup this
 config.github = pe.github || '',
-config.user = pe.targetUser || 'catalystcode',
-config.repo = pe.targetRepo || 'real-life-code',
-config.botUser = pe.botUser || 'Epic-Stuff-Bot',
+config.user = pe.targetUser || 'bunto',
+config.repo = pe.targetRepo || 'bunto',
+config.botUser = pe.botUser || 'buntobot',
 config.botPassword = pe.botPassword || '',
 config.labelReviewed = pe.labelReviewed || 'peer-reviewed',
 config.labelNeedsReview = pe.labelNeedsReview || 'needs-peer-review',
@@ -19,12 +19,12 @@ config.instructionsComment = pe.instructionsComment || '';
 config.pullRequestsStatus = pe.pullRequestsStatus || 'open';
 config.mergeOnReview = pe.mergeOnReview || false;
 config.oauth2token = pe.oauth2token || '';
-config.excludeLabels = pe.excludeLabels || 'no-review';
-config.filenameFilter = pe.filenameFilter || '["_posts"]';
+config.excludeLabels = pe.excludeLabels || 'no-review-needed';
+config.filenameFilter = pe.filenameFilter || '[".md"]';
 
 // Setup Instructions Comment
 if (config.instructionsComment === '') {
-    var comment = 'Hi! I\'m your friendly/stabby Case Study Bot. For this case study to be labeled as "peer-reviewed", ' +
+    var comment = 'Hi! I\'m your friendly/stabby Case Study Bot from the Bunto community. For this case study to be labeled as "peer-reviewed", ' +
                   'you\'ll need at least ' + config.reviewsNeeded + ' comments containing the magic phrase "LGTM" ' +
                   '("Looks good to me" also works, for those of us that are really verbose).';
 
